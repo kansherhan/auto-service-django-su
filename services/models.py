@@ -15,4 +15,3 @@ class Service(models.Model):
 class UserServiceCart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     services = models.ManyToManyField(Service)
-

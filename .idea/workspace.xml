@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Добавил модели в проект и базу данных в SQLite3">
+    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Добавил зависимости">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/database.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spare_parts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/spare_parts/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,8 @@
       <workItem from="1707380834829" duration="443000" />
       <workItem from="1707381614765" duration="2706000" />
       <workItem from="1707669582653" duration="823000" />
-      <workItem from="1707714840278" duration="2830000" />
+      <workItem from="1707714840278" duration="2882000" />
+      <workItem from="1707742193357" duration="1039000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил базовый шаблон и настроил статические файлы">
       <option name="closed" value="true" />
@@ -122,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707717664477</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавил зависимости">
+      <option name="closed" value="true" />
+      <created>1707717771346</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707717771346</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил базовый шаблон и настроил статические файлы" />
     <MESSAGE value="Добавил модели в проект и базу данных в SQLite3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил модели в проект и базу данных в SQLite3" />
+    <MESSAGE value="Добавил зависимости" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил зависимости" />
   </component>
 </project>

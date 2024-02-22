@@ -11,9 +11,9 @@ class Service(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 
-class Customer(models.Model):
-    first_name = models.CharField(max_length=20)
-    last_name = models.CharField(max_length=20)
+class ServiceMaster(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_work = models.BooleanField(default=False)
     phone = models.CharField(max_length=11)
     address = models.CharField(max_length=60)
     registered_at = models.DateTimeField(auto_now_add=True)

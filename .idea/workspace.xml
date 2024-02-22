@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Добавил главную страницу и базовый шаблоны для страниц&#10;Базы данных поменял в SQLite3">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Добавил мастеров в сервисы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/models.py" afterDir="false" />
     </list>
@@ -184,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708107397155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавил мастеров в сервисы">
+      <option name="closed" value="true" />
+      <created>1708594737764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708594737764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +217,7 @@
     <MESSAGE value="Добавил зависимости" />
     <MESSAGE value="Обновлен базы данных и добавлены миграции, админку настроил если можно так назвать" />
     <MESSAGE value="Добавил главную страницу и базовый шаблоны для страниц&#10;Базы данных поменял в SQLite3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил главную страницу и базовый шаблоны для страниц&#10;Базы данных поменял в SQLite3" />
+    <MESSAGE value="Добавил мастеров в сервисы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил мастеров в сервисы" />
   </component>
 </project>

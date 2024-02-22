@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 
 class Service(models.Model):
     name = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=100, unique=True)
     image_url = models.URLField()
     detail = models.TextField()
     price = models.IntegerField()

@@ -3,17 +3,18 @@ from django.contrib.auth import views as authViews
 from django.urls import path, include
 
 urlpatterns = [
-    path("", include("main.urls")),
     path("admin/", admin.site.urls),
+    path("", include("main.urls")),
+    path("spare_parts/", include("spare_parts.urls")),
     path("auth/", include([
                 path(
                     "login/",
-                    authViews.LoginView.as_view(template_name="registration/login.html"),
+                    authViews.LoginView.as_view(template_name="pages/auth/login.html"),
                     name="login",
                 ),
                 path(
                     "logout/",
-                    authViews.LogoutView.as_view(template_name="registration/logged_out.html"),
+                    authViews.LogoutView.as_view(),
                     name="logout"
                 ),
             ]

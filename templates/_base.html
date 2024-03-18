@@ -25,39 +25,9 @@
 
   <body>
     <div class="container py-4">
-      <header class="pb-3 mb-4 border-bottom">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Автосервис</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        
-              <div class="collapse navbar-collapse" id="navbarsExample04">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{% url 'spare_parts_index' %}">Товары</a>
-                  </li>
-                </ul>
-                <form role="search">
-                  <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
-                </form>
-              </div>
-            </div>
-          </nav>
-      </header>
-
-      {% block content %}{% endblock %}
-
-      <footer class="pt-3 mt-4 text-body-secondary border-top">
-        &copy; 2024 - Қантаев Шерхан, Жансерік Мирас
-      </footer>
+        {% include "./elements/_header.html" %}
+        {% block content %}{% endblock %}
+        {% include "./elements/_footer.html" with year="2024" authors="Қантаев Шерхан, Жансерік Мирас" %}
     </div>
 
     <script

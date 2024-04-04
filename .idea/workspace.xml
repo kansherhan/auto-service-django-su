@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Добавил мастеров в сервисы">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/elements/_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/elements/_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/autoservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autoservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cde7e9c6-cc9d-415c-833f-1d531cc2fc5a" name="Changes" comment="Обновил мастера сервиса">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/database.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoservice/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/autoservice/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/elements/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/elements/_footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Projects/python/auto-service-django-su&quot;,
@@ -86,7 +82,6 @@
   <component name="RunManager">
     <configuration name="autoservice" type="Python.DjangoServer" factoryName="Django server">
       <module name="autoservice" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -156,6 +151,8 @@
       <workItem from="1709789882246" duration="305000" />
       <workItem from="1709801374726" duration="929000" />
       <workItem from="1710781869516" duration="1464000" />
+      <workItem from="1712221645110" duration="30000" />
+      <workItem from="1712221690617" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил базовый шаблон и настроил статические файлы">
       <option name="closed" value="true" />

@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponseRedirect
+from django.http import JsonResponse
 
 from .models import SparePart
 from .forms import SparePartForm
@@ -16,6 +17,11 @@ def index(request):
     )
 
 
+def index_api(request):
+    spare_parts = list(SparePart.objects.values())
+    return JsonResponse(spare_parts, safe=False)
+
+
 def create(request):
     if request.method == 'POST':
         form = SparePartForm(request.POST, request.FILES)
@@ -25,6 +31,17 @@ def create(request):
     else:
         form = SparePartForm
     return render(request, 'pages/form.html', {'form': form})
+
+
+def create_api(request):
+    if request.method == 'POST':
+        form = SparePartForm(request.POST, request.FILES)
+        if form.is_valid():
+            data = form.cleaned_data
+            return JsonResponse(data)
+        else:
+            data = form.errors.as_json()
+            return JsonResponse(data, status=400)
 
 
 def update(request, id):
@@ -37,6 +54,19 @@ def update(request, id):
     else:
         form = SparePartForm(instance=spare_part)
     return render(request, 'pages/form.html', {'form': form})
+
+
+def update_api(request, id):
+    if request.method == 'POST':
+        spare_part = SparePart.objects.get(id=id)
+        form = SparePartForm(request.POST, instance=spare_part)
+
+        if form.is_valid():
+            data = form.cleaned_data
+            return JsonResponse(data)
+        else:
+            data = form.errors.as_json()
+            return JsonResponse(data, status=400)
 
 
 def delete(request, id):

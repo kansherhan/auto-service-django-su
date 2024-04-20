@@ -18,10 +18,18 @@
                 <li class="nav-item">
                 <a class="nav-link" href="{% url 'spare_parts_index' %}">Товары</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin">Админка</a>
+              </li>
             </ul>
-            <form role="search">
+            <form role="search" class="me-2">
               <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
             </form>
+
+            <div class="text-end">
+              <a href="{% url 'login' %}" class="btn btn-outline-light">Логин</a>
+              <a href="{% url 'login' %}" class="btn btn-warning">Регистрация</a>
+            </div>
           </div>
         </div>
     </nav>

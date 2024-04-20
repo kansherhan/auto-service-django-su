@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 
 class Service(models.Model):
     name = models.CharField(max_length=100)
-    image_url = models.URLField()
     detail = models.TextField()
     price = models.IntegerField()
+    file = models.FileField(upload_to='service_files/', null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
